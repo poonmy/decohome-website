@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* max-width: 400px; */
+    /* adjust the width as needed */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+    /* filter: blur(20px); */
+    /* Adjust the blur radius as needed */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 30px 50px;
+    z-index: 5;
+    /* Ensure it's on top of everything */
+}
+
+.overlay-content {
+    text-align: left;
+    color: white;
+}
+
+.custom-btn {
+    background-color: #e7d3bf!important;
+    border-color: #f1e3cf!important; /* Optional: Change border color */
+}
+
+.custom-btn:hover {
+    background-color: #d2b09a!important; /* Optional: Change color on hover */
+    /* border-color: #your-hover-border-color; */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .overlay {
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .image {
+        width: 120%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}
